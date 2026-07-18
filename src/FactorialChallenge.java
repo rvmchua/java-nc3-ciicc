@@ -12,17 +12,17 @@ public class FactorialChallenge {
         //
         //• Validate the input by displaying an error message if the user enters a negative number.
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int number = input.nextInt();
-        int factorial = 1;
-
-        if (number == 0) {
-            System.out.println("Factorial: " + factorial);
-        } else {
-            for (int i = number; i > 0; i--) {
-                factorial *= i;
-            }
-            System.out.println("Factorial: " + factorial);
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Enter a number: ");
+//        int number = input.nextInt();
+//        int factorial = 1;
+//
+//        if (number == 0) {
+//            System.out.println("Factorial: " + factorial);
+//        } else {
+//            for (int i = number; i > 0; i--) {
+//                factorial *= i;
+//            }
+//            System.out.println("Factorial: " + factorial);
     }
 }
