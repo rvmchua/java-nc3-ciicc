@@ -3,14 +3,16 @@ import java.util.Scanner;
 public class DescendingPrinter {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int totalNumber = input.nextInt();
+        System.out.print("Enter max number: ");
+        int maxNumber = input.nextInt();
+        System.out.print("Enter min number: ");
+        int minNumber = input.nextInt();
 
-        input.close();
-        for (int numberToDisplay = totalNumber; numberToDisplay > 0; numberToDisplay--) {
+        for (int numberToDisplay = maxNumber; numberToDisplay >= minNumber; numberToDisplay--) {
             System.out.println(numberToDisplay);
         }
 
         System.out.println("Loop complete!");
+        input.close();
     }
 }
