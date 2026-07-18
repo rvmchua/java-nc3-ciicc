@@ -1,4 +1,4 @@
-public class ArrayDisplay {
+public class OldArrayDisplay {
     public static void main(String[] args) {
         int[] numbers = {12, 25, 37, 44, 59};
         int moreThan30 = 0;
