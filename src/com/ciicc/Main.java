@@ -5,11 +5,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       sayHi("Summer");
-       sayHi("hello");
-    }
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter length: ");
+        byte length = input.nextByte();
+        String[] colors = new String[length];
 
-    public static void sayHi(String name){
-        System.out.println("Hi "+name);
+        for (int index = 0; index < colors.length; index++) {
+            System.out.print("Enter color: ");
+            colors[index] = input.next();
+        }
+
+        input.close();
+        System.out.println(Arrays.toString(colors));
     }
 }
