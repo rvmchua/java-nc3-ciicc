@@ -7,8 +7,7 @@ public class Triangle extends Shape {
         System.out.println("Triangle");
     }
 
-    @Override
-    public void setSide() {
-        super.setSide();
+    public void calculateArea() {
+        System.out.println("Area of Triangle");
     }
 }

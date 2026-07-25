@@ -1,12 +1,6 @@
 package com.ciicc.twentyfive;
 
-public class Shape {
+public abstract class Shape {
 
-    public void print() {
-        System.out.println("Shape");
-    }
-
-    public void setSide() {
-        System.out.println("setSide");
-    }
+    public abstract void print();
 }
