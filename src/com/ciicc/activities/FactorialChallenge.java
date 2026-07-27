@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package com.ciicc.activities;
 
 public class FactorialChallenge {
     public static void main(String[] args) {
@@ -18,11 +18,11 @@ public class FactorialChallenge {
 //        int factorial = 1;
 //
 //        if (number == 0) {
-//            System.out.println("Factorial: " + factorial);
+//            System.out.println("com.ciicc.activities.Factorial: " + factorial);
 //        } else {
 //            for (int i = number; i > 0; i--) {
 //                factorial *= i;
 //            }
-//            System.out.println("Factorial: " + factorial);
+//            System.out.println("com.ciicc.activities.Factorial: " + factorial);
     }
 }

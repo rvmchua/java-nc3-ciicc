@@ -1,3 +1,5 @@
+package com.ciicc.activities;
+
 import java.util.Arrays;
 
 public class DoubleTheElements {

@@ -1,3 +1,5 @@
+package com.ciicc.activities;
+
 import java.util.Scanner;
 
 public class Factorial {
@@ -8,12 +10,12 @@ public class Factorial {
         int factorial = 1;
 
         if (number == 0) {
-            System.out.println("Factorial: " + factorial);
+            System.out.println("com.ciicc.activities.Factorial: " + factorial);
         } else {
             for (int i = number; i > 0; i--) {
                 factorial *= i;
             }
-            System.out.println("Factorial: " + factorial);
+            System.out.println("com.ciicc.activities.Factorial: " + factorial);
         }
     }
 }

@@ -1,3 +1,5 @@
+package com.ciicc.activities;
+
 public class OldArrayDisplay {
     public static void main(String[] args) {
         int[] numbers = {12, 25, 37, 44, 59};

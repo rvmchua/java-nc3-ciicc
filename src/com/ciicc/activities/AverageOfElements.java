@@ -1,3 +1,5 @@
+package com.ciicc.activities;
+
 import java.util.Arrays;
 
 public class AverageOfElements {
@@ -11,7 +13,7 @@ public class AverageOfElements {
         }
         average = sum / numbers.length;
 
-        System.out.println("Test Data");
+        System.out.println("com.ciicc.activities.Test Data");
         System.out.println("Array: " + Arrays.toString(numbers));
         System.out.println("Average: " + average);
 
