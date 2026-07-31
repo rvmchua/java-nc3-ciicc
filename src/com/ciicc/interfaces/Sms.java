@@ -3,8 +3,8 @@ package com.ciicc.interfaces;
 public class Sms implements NotificationManager {
     private String phoneNumber;
 
-    public Sms(String userName) {
-        this.phoneNumber = userName;
+    public Sms(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public void setPhoneNumber(String phoneNumber) {
@@ -14,5 +14,10 @@ public class Sms implements NotificationManager {
     @Override
     public void notifyUser() {
         System.out.println("Notified " + phoneNumber + " via SMS");
+    }
+
+    @Override
+    public void sendDetail() {
+        System.out.println("Phone number is: " + phoneNumber);
     }
 }

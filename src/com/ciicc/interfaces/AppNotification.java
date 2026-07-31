@@ -15,4 +15,8 @@ public class AppNotification implements NotificationManager {
     public void notifyUser() {
         System.out.println("Notified "+ userName + " via App");
     }
+
+    public void sendDetail() {
+        System.out.println("User is: " + userName);
+    }
 }

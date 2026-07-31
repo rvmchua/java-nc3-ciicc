@@ -2,23 +2,42 @@ package com.ciicc.interfaces;
 
 public class Main {
     public static void main(String[] args) {
+//        UserInfo user = new UserInfo(
+//                "Royce",
+//                "royce@royce.com",
+//                "09123456789"
+//        );
+
+        String emailAddress = "royce@royce";
+        String phone = "09123456789";
         String userName = "royce";
-        String phoneNumber = "09123456789";
-        String emailAddress = "royce@royce.com";
 
         NotificationManager email = new Email(emailAddress);
-        NotificationManager sms = new Sms(phoneNumber);
-        NotificationManager appNotification = new AppNotification(userName);
+        NotificationManager sms = new Sms(phone);
+        NotificationManager app = new AppNotification(userName);
 
 //        Constructor Injection
-        NotificationService notificationService = new NotificationService(email);
-        notificationService.send();
+        NotificationService emailNotif = new NotificationService(email);
+        emailNotif.send();
+        emailNotif.sendDetail();
 
-//        Setter injection
-        notificationService.setNotificationManager(sms);
-        notificationService.send();
+        NotificationService smsNotif = new NotificationService(sms);
+        smsNotif.send();
+        smsNotif.sendDetail();
 
-//        Regular method injection
-        notificationService.send(appNotification);
+        NotificationService appNotif = new NotificationService(app);
+        appNotif.send();
+        appNotif.sendDetail();
+
+
+
+
+
+////        Setter injection
+//        notificationService.setNotificationManager(sms);
+//        notificationService.send();
+//
+////        Regular method injection
+//        notificationService.send(appNotification);
     }
 }
